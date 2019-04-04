@@ -43,7 +43,14 @@ class App extends Component {
       <div>
         <Title />
         <Form getWheather = {this.getWheather}/>
-        <Wheather />
+        <Wheather
+          temperature = {this.state.temperature}
+          city = {this.state.city}
+          country = {this.state.country}
+          description = {this.state.description}
+          humidity = {this.state.humidity}
+          error = {this.state.error}
+         />
       </div>
     )
   }

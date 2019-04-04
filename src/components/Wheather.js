@@ -4,7 +4,7 @@ class Wheather extends Component {
     render(){
         return (
             <div>
-               Wheather Component goes here........
+               temperature = {this.props.temperature}
             </div>
         )
     }
