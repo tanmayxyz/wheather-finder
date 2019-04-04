@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from './components/Title';
 import Form from './components/Form';
 import Wheather from './components/Wheather';
+import './App.css';
 
 const API_KEY = "5c3b05d5417e9bfb0a7448ac299e3b89";
 
