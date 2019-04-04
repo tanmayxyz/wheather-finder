@@ -11,6 +11,7 @@ class Wheather extends Component {
                {this.props.humidity && <p>humidity = {this.props.humidity+ " "}</p>}
                
                {this.props.description && <p>description = {this.props.description}</p>}
+               {this.props.error && <p>{this.props.error}</p>}
             </div>
         )
     }

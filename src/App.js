@@ -35,6 +35,16 @@ class App extends Component {
         error : undefined
   
       })
+    } else {
+      this.setState({
+        temperature : undefined,
+        city :undefined,
+        country : undefined,
+        humidity : undefined,
+        description : undefined,
+        error : "enter the given fields"
+  
+      })
     }
   }
 
