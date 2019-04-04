@@ -25,15 +25,17 @@ class App extends Component {
     const data = await api_call.json();
     console.log(data);
 
-    this.setState({
-      temperature : data.main.temp,
-      city :data.name,
-      country : data.sys.country,
-      humidity : data.main.humidity,
-      description : data.weather[0].description,
-      error : undefined
-
-    })
+    if(country && city){
+      this.setState({
+        temperature : data.main.temp,
+        city :data.name,
+        country : data.sys.country,
+        humidity : data.main.humidity,
+        description : data.weather[0].description,
+        error : undefined
+  
+      })
+    }
   }
 
 
